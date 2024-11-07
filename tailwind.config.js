@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js,njk}"],
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      container:{
+        center:true,
+      
+        
+      }
+    },
+  },plugins: [require('tailwindcss-motion')],
 }
